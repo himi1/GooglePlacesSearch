@@ -10,4 +10,4 @@ GooglePlacesSearch – A small app for searching places via google places API.
 
 ## App demo
 
-- Please see this [demo video](https://github.com/himi1/searchSpotify/blob/master/appvideo1080p.mp4)
+- Please see this [demo video](https://github.com/himi1/GooglePlacesSearch/blob/master/appvideo720p.mp4)
