@@ -5,6 +5,7 @@
 //  Created by Himanshi Bhardwaj on 8/28/17.
 //  Copyright © 2017 Himanshi Bhardwaj. All rights reserved.
 //
+// parts of code taken/inspired from https://github.com/watsonbox/ios_google_places_autocomplete
 
 import Foundation
 
