@@ -40,6 +40,7 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         setupTableView()
     }
     
+    //MARK: init setup functions
     private func setupTableView() {
         tableView.dataSource = self
         tableView.delegate = self
@@ -83,7 +84,6 @@ class DetailsViewController: UIViewController, UITableViewDataSource, UITableVie
         searchCell.textLabel!.text = place.description
         searchCell.backgroundColor = .clear
         searchCell.textLabel?.textColor = .white
-        
         return searchCell
     }
     

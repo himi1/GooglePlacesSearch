@@ -149,14 +149,11 @@ class SearchPlaceViewController: UIViewController, UITableViewDataSource, UITabl
         }
         api = GooglePlacesAutocompleteApi()
         filterContentForSearchText(searchController.searchBar.text!)
-        
     }
     
     @IBAction private func onTap(_ sender: UITapGestureRecognizer) {
         searchController.searchBar.endEditing(true)
     }
-    
-    
 }
 
 

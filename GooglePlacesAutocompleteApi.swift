@@ -29,9 +29,7 @@ open class GooglePlacesAutocompleteApi {
     open func getPlaces(_ searchString: String, completion: @escaping (([Place]?, Error?) -> Void)) {
         let params = ["input": searchString,
                       "types": placeType.description,
-                      "key": apiKey
-        ]
-        
+                      "key": apiKey]
         if (searchString == ""){
             let error = NSError(domain: "GooglePlacesAutocompleteErrorDomain"
                 , code: 1000, userInfo: [NSLocalizedDescriptionKey:"No search string given"])
@@ -55,7 +53,6 @@ open class GooglePlacesAutocompleteApi {
                 }
             } else {
                 completion(nil,error)
-                
             }
         }
     }
