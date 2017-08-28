@@ -115,12 +115,12 @@
 		7E95F1AC1F4F97F60072EC4A /* GooglePlacesSearch */ = {
 			isa = PBXGroup;
 			children = (
-				7E95F1E71F5392730072EC4A /* API */,
-				7E95F1AD1F4F97F60072EC4A /* AppDelegate.swift */,
-				7E95F1B41F4F97F60072EC4A /* Assets.xcassets */,
-				7E95F1DD1F4F9C390072EC4A /* ColorTheme.swift */,
-				7EE83FBC1F543FCD00424584 /* Controller */,
 				7E95F1B91F4F97F60072EC4A /* Info.plist */,
+				7E95F1AD1F4F97F60072EC4A /* AppDelegate.swift */,
+				7E95F1DD1F4F9C390072EC4A /* ColorTheme.swift */,
+				7E95F1B41F4F97F60072EC4A /* Assets.xcassets */,
+				7E95F1E71F5392730072EC4A /* API */,
+				7EE83FBC1F543FCD00424584 /* Controller */,
 				7EE83FBB1F543FB500424584 /* Model */,
 				7EE83FBA1F543FA000424584 /* View */,
 			);
