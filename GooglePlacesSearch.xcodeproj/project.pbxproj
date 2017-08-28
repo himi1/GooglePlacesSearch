@@ -56,7 +56,7 @@
 		7E95F1CD1F4F97F60072EC4A /* GooglePlacesSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlacesSearchUITests.swift; sourceTree = "<group>"; };
 		7E95F1CF1F4F97F60072EC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7E95F1DB1F4F9A9F0072EC4A /* SearchPlaceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchPlaceViewController.swift; path = GooglePlacesSearch/SearchPlaceViewController.swift; sourceTree = "<group>"; };
-		7E95F1DD1F4F9C390072EC4A /* ColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorTheme.swift; sourceTree = "<group>"; };
+		7E95F1DD1F4F9C390072EC4A /* ColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorTheme.swift; path = ../ColorTheme.swift; sourceTree = "<group>"; };
 		7E95F1DF1F4F9C5B0072EC4A /* GooglePlaceAutoCompleteData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlaceAutoCompleteData.swift; sourceTree = "<group>"; };
 		7E95F1E31F4F9EF10072EC4A /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailsViewController.swift; path = GooglePlacesSearch/DetailsViewController.swift; sourceTree = "<group>"; };
 		7E95F1E51F53802B0072EC4A /* ErrorClassifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorClassifications.swift; sourceTree = "<group>"; };
@@ -95,15 +95,10 @@
 		7E95F1A11F4F97F60072EC4A = {
 			isa = PBXGroup;
 			children = (
-				7E95F1E71F5392730072EC4A /* API */,
-				7E95F1DD1F4F9C390072EC4A /* ColorTheme.swift */,
-				7EE83FBC1F543FCD00424584 /* Controller */,
 				7E95F1AC1F4F97F60072EC4A /* GooglePlacesSearch */,
 				7E95F1C11F4F97F60072EC4A /* GooglePlacesSearchTests */,
 				7E95F1CC1F4F97F60072EC4A /* GooglePlacesSearchUITests */,
-				7EE83FBB1F543FB500424584 /* Model */,
 				7E95F1AB1F4F97F60072EC4A /* Products */,
-				7EE83FBA1F543FA000424584 /* View */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,9 +115,14 @@
 		7E95F1AC1F4F97F60072EC4A /* GooglePlacesSearch */ = {
 			isa = PBXGroup;
 			children = (
+				7E95F1E71F5392730072EC4A /* API */,
 				7E95F1AD1F4F97F60072EC4A /* AppDelegate.swift */,
 				7E95F1B41F4F97F60072EC4A /* Assets.xcassets */,
+				7E95F1DD1F4F9C390072EC4A /* ColorTheme.swift */,
+				7EE83FBC1F543FCD00424584 /* Controller */,
 				7E95F1B91F4F97F60072EC4A /* Info.plist */,
+				7EE83FBB1F543FB500424584 /* Model */,
+				7EE83FBA1F543FA000424584 /* View */,
 			);
 			path = GooglePlacesSearch;
 			sourceTree = "<group>";
@@ -149,20 +149,22 @@
 			isa = PBXGroup;
 			children = (
 				7E95F1E51F53802B0072EC4A /* ErrorClassifications.swift */,
+				7E95F1DF1F4F9C5B0072EC4A /* GooglePlaceAutoCompleteData.swift */,
 				7EE83FB21F53E3C200424584 /* GooglePlacesAutocompleteApi.swift */,
 				7E95F1EC1F5395650072EC4A /* GooglePlacesRequest.swift */,
-				7E95F1DF1F4F9C5B0072EC4A /* GooglePlaceAutoCompleteData.swift */,
 			);
 			name = API;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		7EE83FBA1F543FA000424584 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				7E95F1B11F4F97F60072EC4A /* Main.storyboard */,
 				7E95F1B61F4F97F60072EC4A /* LaunchScreen.storyboard */,
+				7E95F1B11F4F97F60072EC4A /* Main.storyboard */,
 			);
 			name = View;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		7EE83FBB1F543FB500424584 /* Model */ = {
@@ -173,6 +175,7 @@
 				7EE83FB81F54251700424584 /* PlaceType.swift */,
 			);
 			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		7EE83FBC1F543FCD00424584 /* Controller */ = {
@@ -182,6 +185,7 @@
 				7E95F1DB1F4F9A9F0072EC4A /* SearchPlaceViewController.swift */,
 			);
 			name = Controller;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +491,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hb.GooglePlacesSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -499,6 +504,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = hb.GooglePlacesSearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
